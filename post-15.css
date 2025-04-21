@@ -1,0 +1,23 @@
+.elementor-kit-15{--e-global-color-primary:#FFFFFF;--e-global-color-secondary:#2B2E31;--e-global-color-text:#FFFFFF;--e-global-color-accent:#6FFF00;--e-global-color-75ccff4:#131517;--e-global-color-a2dbc9f:#F0B90B;--e-global-typography-primary-font-family:"Roboto";--e-global-typography-primary-font-weight:600;--e-global-typography-secondary-font-family:"Roboto";--e-global-typography-secondary-font-weight:400;--e-global-typography-text-font-family:"Roboto";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Roboto";--e-global-typography-accent-font-weight:500;background-color:#000000;font-family:"Roboto", Sans-serif;font-size:16px;font-weight:400;line-height:1.4em;}.elementor-kit-15 e-page-transition{background-color:#FFBC7D;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1260px;}.e-con{--container-max-width:1260px;}.elementor-widget:not(:last-child){margin-block-end:20px;}.elementor-element{--widgets-spacing:20px 20px;--widgets-spacing-row:20px;--widgets-spacing-column:20px;}{}h1.entry-title{display:var(--page-title-display);}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}/* Start custom CSS */@media (max-width: 1024px) {
+  /* Spricht den Block mit der Klasse scrollable-buttons an */
+  .scrollable-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Aktiviert horizontalen Scroll */
+    white-space: nowrap; /* Verhindert Umbruch */
+    scroll-snap-type: x mandatory; /* Erlaubt Scroll-Snapping */
+    -webkit-overflow-scrolling: touch; /* Glatteres Scrollen auf mobilen Geräten */
+  }
+
+  /* Spricht die direkten Kindelemente (Buttons) an */
+  .scrollable-buttons .elementor-widget {
+    flex: 0 0 auto; /* Stellt sicher, dass die Buttons sich nicht umbrechen */
+    scroll-snap-align: start; /* Jedes Element snappt an den Anfang */
+    margin-right: 0px; /* Optional: Abstand zwischen den Buttons */
+  }
+
+  /* Versteckt den Scrollbalken auf mobilen Geräten */
+  .scrollable-buttons::-webkit-scrollbar {
+    display: none;
+  }
+}/* End custom CSS */
